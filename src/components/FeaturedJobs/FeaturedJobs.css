@@ -1,0 +1,46 @@
+.border {
+    border: 1px solid rgb(190, 184, 184);
+}
+
+.jobs-heading {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #474747;
+}
+
+.jobs-paragraph {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+
+}
+
+.text-outlined {
+    border: 1px solid rgb(192, 162, 192);
+    border-radius: 4px;
+    padding: 9px 19px;
+}
+
+.location-salary {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+}
+
+.logo {
+    width: 120px;
+    height: 40px;
+}
+.loco-logo, .salary-logo{
+width: 24px;
+height: 24px;
+}

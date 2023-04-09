@@ -7,6 +7,9 @@ const Home = () => {
 
     const [jobs, setJobs] = useState([])
     const [jobState, setJobState] = useState([]);
+    const [showAllJobs, setShowAllJobs] = useState(false)
+
+
     useEffect(() => {
         fetch('jobs.json').then(res => res.json()).then(data => setJobs(data))
     }, [])
@@ -15,7 +18,9 @@ const Home = () => {
         fetch('featured.json').then(res => res.json()).then(data => setJobState(data))
     }, []);
 
-
+    const handleShowAllJobs = () => {
+        setShowAllJobs(true)
+    }
     return (
         <React.Fragment>
             {/*heading, image */}
@@ -55,14 +60,20 @@ const Home = () => {
                 {/**card */}
                 <div className="my-container">
                     <div className='grid mb-4 mx-16 gap-16 lg:grid-cols-2 sm:grid-cols-1'>
-                        {jobState.map(jobInfo => (<FeaturedJobs key={jobInfo.id} jobInfo={jobInfo}></FeaturedJobs>))}
+                        {jobState.slice(0, showAllJobs ? 6 : 4).map(jobInfo => (<FeaturedJobs key={jobInfo.id} jobInfo={jobInfo}></FeaturedJobs>))}
                     </div>
+                </div>
+                <div className='text-center mb-12'>
+                    {
+                        (!showAllJobs) && <span onClick={handleShowAllJobs}><button className='btn rounded-lg'>See All Jobs</button></span>
+                    }
                 </div>
             </section>
             {/*Featured Jobs end */}
         </React.Fragment>
     );
 };
-
+// {(!showAll) && <span onClick={handleShowAll}>
+//                 <Button>See More</Button></span>}
 export default Home;
 

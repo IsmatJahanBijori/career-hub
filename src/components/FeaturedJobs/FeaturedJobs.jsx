@@ -26,7 +26,7 @@ const FeaturedJobs = ({ jobInfo }) => {
                         <p>Salary: {jobInfo.location}</p>
                     </div>
                 </div>     
-                <button className='btn mb-4 mt-auto'>View Details</button>
+                <button className='btn mb-4 mt-auto rounded-lg'>View Details</button>
             </div>
         </div>
     );

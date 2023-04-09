@@ -44,7 +44,7 @@ const Home = () => {
 
                 {/**card */}
                 <div className="my-container">
-                    <div className='grid mb-8 mx-32 gap-32 lg:grid-cols-4 sm:grid-cols-2'>
+                    <div className='grid mb-6 mx-32 gap-10 md:gap-32 lg:grid-cols-4 sm:grid-cols-2'>
                         {jobs.map(job => (<Job job={job} />))}
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Home = () => {
 
                 {/**card */}
                 <div className="my-container">
-                    <div className='grid mb-4 mx-16 gap-16 lg:grid-cols-2 sm:grid-cols-1'>
+                    <div className='grid mb-1 md:mb-2 mx-16 gap-8 lg:grid-cols-2 sm:grid-cols-1'>
                         {jobState.slice(0, showAllJobs ? 6 : 4).map(jobInfo => (<FeaturedJobs key={jobInfo.id} jobInfo={jobInfo}></FeaturedJobs>))}
                     </div>
                 </div>

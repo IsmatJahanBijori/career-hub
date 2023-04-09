@@ -14,3 +14,13 @@
     line-height: 30px;
     color: #757575;
 }
+
+.job-heading {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 66px;
+    margin-top: 130px;
+    text-align: center;
+}

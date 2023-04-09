@@ -1,5 +1,6 @@
 import React from 'react';
 import './FeaturedJobs.css'
+import { Link } from 'react-router-dom';
 const FeaturedJobs = ({ jobInfo }) => {
     return (
         <div className=" w-full bg-slate-100 border rounded-lg">
@@ -26,7 +27,7 @@ const FeaturedJobs = ({ jobInfo }) => {
                         <p>Salary: {jobInfo.location}</p>
                     </div>
                 </div>     
-                <button className='btn mb-4 mt-auto rounded-lg'>View Details</button>
+                <Link to='/job'><button className='btn mb-4 mt-auto rounded-lg' jobInfo={jobInfo}>View Details</button></Link>
             </div>
         </div>
     );

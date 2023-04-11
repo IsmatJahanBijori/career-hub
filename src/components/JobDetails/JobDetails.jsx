@@ -4,30 +4,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 // import { useLoaderData } from 'react-router-dom';
 // import { useLoaderData } from 'react-router-dom';
 const JobDetails = () => {
-    // const {job_description, job_responsibility, education_requirements, experiences}=jobInfo
-    // const {job_description, job_responsibility, education_requirements, experiences}=useLoaderData()
-    // console.log(jobInfo)
-    // const jobDetails=useLoaderData()
-    // const [jobState, setJobState] = useState([]);
-    // useEffect(() => {
-    //     fetch('featured.json').then(res => res.json()).then(data => setJobState(data))
-    // }, []);
-
-    // eivabe rekhe dibo
-    // const { id } = useParams()
-    // const jobFeatured = useLoaderData()
-    // // console.log(jobFeatured)
-
-
-    // const [jobDetailing, setJobDetailing] = useState([])
-    // useEffect(() => {
-    //     jobFeatured.find(jf => jf.id == id)
-    //     setJobDetailing(jobFeatured)
-    // }, [])
-    // console.log(jobFeatured.job_description)
-
-
-
+ 
     let { id } = useParams()
     // const jobFeatured = useLoaderData()
     // console.log(jobFeatured)
@@ -37,8 +14,8 @@ const JobDetails = () => {
     useEffect(() => {
         fetch('/featured.json').then(res => res.json()).then(data => setJobDetailing(data))
     }, [])
-    const details = jobDetailing?.filter(job => job.id === id)
-    console.log(details[0])
+    const details = jobDetailing?.find(job => job.id == id)
+    // console.log(details[0])
     // const { job_description, job_responsibility, education_requirements, experiences } = details[0]
     return (
         <section>

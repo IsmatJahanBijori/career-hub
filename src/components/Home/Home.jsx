@@ -40,17 +40,19 @@ const Home = () => {
     return (
         <React.Fragment>
             {/*heading, image */}
-            <section className='flex justify-around bg-slate-100 pt-10'>
+            <section className=' bg-slate-100 pt-10'>
 
                 {/*heading */}
+                <div className='flex flex-col md:flex-row justify-around'>
                 <div className='mx-32'>
                     <h1 className='heading'>One Step <br /><span>Closer To Your</span> <br /> <span className='color'>Dream Job</span></h1>
                     <p className='paragraph'>Discover tens of thousands of employment options with the <br /> necessary knowledge. It is the future you. Locate <br /> it here. Manage every aspect of your job application process.
                     </p>
                 </div>
 
-                {/*image */}
-                <img src="https://i.ibb.co/G3dGQtP/P3-OLGJ1-copy-1.png" alt="" />
+                {/*image flex sm:flex-col md:flex flex-row justify-around */}
+                <img src="https://i.ibb.co/G3dGQtP/P3-OLGJ1-copy-1.png" className='w-64 mx-auto pt-5 md:w-96' alt="" />
+                </div>
             </section>
 
             {/*Job Category List start*/}

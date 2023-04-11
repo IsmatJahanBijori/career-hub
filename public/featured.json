@@ -1,7 +1,7 @@
 [
     {
         "id": "123456",
-        "logo": "/src/assets/google-1-1 1-1.png",
+        "logo": "https://i.ibb.co/vBD8MX9/google-1-1-1-1.png",
         "job_title": "Front-End Web Developer",
         "company_name": "Tech Solutions Inc.",
         "remote_or_onsite": "Remote",
@@ -18,10 +18,12 @@
           "phone": "(123) 456-7890",
           "email": "jobs@techsolutions.com"
         }
+
+      
       },
       {
         "id": "789012",
-        "logo": "/src/assets/tesla-9 1.png",
+        "logo": "https://i.ibb.co/GC6FyWb/tesla-9-1.png",
         "job_title": "Marketing Manager",
         "company_name": "Growth Marketing Co.",
         "remote_or_onsite": "Onsite",
@@ -41,7 +43,7 @@
       },
       {
         "id": "345678",
-        "logo": "/src/assets/netflix-4 1.png",
+        "logo": "https://i.ibb.co/R4R5F4D/netflix-4-1.png",
         "job_title": "Software Engineer",
         "company_name": "Innovative Software Solutions",
         "remote_or_onsite": "Remote",
@@ -61,7 +63,7 @@
       }, 
       {
         "id": "567890",
-        "logo": "/src/assets/google-1-1 1.png",
+        "logo": "https://i.ibb.co/vBD8MX9/google-1-1-1-1.png",
         "job_title": "Data Analyst",
         "company_name": "Insightful Analytics Inc.",
         "remote_or_onsite": "Onsite",
@@ -81,7 +83,7 @@
       }
       ,{
         "id": "234567",
-        "logo": "/src/assets/Vector-1.png",
+        "logo": "https://i.ibb.co/LtR8VDG/Vector-1.png",
         "job_title": "Product Manager",
         "company_name": "Next-Generation Tech Inc.",
         "remote_or_onsite": "Onsite",
@@ -99,10 +101,10 @@
           "email": "jobs@nextgentech.com"
         }
       },
-      
+
       {
         "id": "901234",
-        "logo": "/src/assets/tesla-9 1.png",
+        "logo": "https://i.ibb.co/GC6FyWb/tesla-9-1.png",
         "job_title": "HR Coordinator",
         "company_name": "People Solutions LLC",
         "remote_or_onsite": "Onsite",

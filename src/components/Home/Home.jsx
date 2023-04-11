@@ -50,7 +50,7 @@ const Home = () => {
                 </div>
 
                 {/*image */}
-                <img src="/public/P3OLGJ1 copy 1.png" alt="" />
+                <img src="https://i.ibb.co/G3dGQtP/P3-OLGJ1-copy-1.png" alt="" />
             </section>
 
             {/*Job Category List start*/}

@@ -1,22 +1,22 @@
 [
     {
         "Job_title": "Account & Finance",
-        "logo": "/public/accounts 1.png",
+        "logo": "https://i.ibb.co/hdSGbGm/accounts-1.png",
         "job_available": "300 Jobs Available"
     },
     {
         "Job_title": "Creative Design",
-        "logo": "/public/business 1.png",
+        "logo": "https://i.ibb.co/Hhz8QG2/business-1.png",
         "job_available": "100+ Jobs Available"
     },
     {
         "Job_title": "Marketing & Sales",
-        "logo": "/public/chip 1.png",
+        "logo": "https://i.ibb.co/kcbMFtM/chip-1.png",
         "job_available": "150 Jobs Available"
     },
     {
         "Job_title": "Engineering Job",
-        "logo": "/public/Frame-1.png",
+        "logo": "https://i.ibb.co/ggLDYv2/Frame-1.png",
         "job_available": "240 job available"
     }
 ]

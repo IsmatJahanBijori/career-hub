@@ -1,7 +1,12 @@
 import React from 'react';
 import './FeaturedJobs.css'
 import { Link } from 'react-router-dom';
+import JobDetails from '../JobDetails/JobDetails';
+
+
 const FeaturedJobs = ({ jobInfo }) => {
+    // console.log(jobInfo)
+
     return (
         <div className=" w-full bg-slate-100 border rounded-lg">
             <figure className="px-10 pt-10">
@@ -24,10 +29,10 @@ const FeaturedJobs = ({ jobInfo }) => {
 
                     <div className='gap-2 flex flex-row'>
                         <img className='salary-logo' src={jobInfo.frame} alt="" />
-                        <p>Salary: {jobInfo.location}</p>
+                        <p>Salary: {jobInfo.salary}</p>
                     </div>
                 </div>     
-                <Link to='/job'><button className='btn mb-4 mt-auto rounded-lg' jobInfo={jobInfo}>View Details</button></Link>
+                <Link to={`/job/${jobInfo.id}`}><button className='btn mb-4 mt-auto rounded-lg py-4 mr-10'>View Details <JobDetails jobInfo={jobInfo}></JobDetails> </button></Link>
             </div>
         </div>
     );

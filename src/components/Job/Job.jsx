@@ -1,6 +1,8 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const Job = ({ job }) => {
+    // const job=useLoaderData()
     return (
             <div className="card w-64 bg-slate-100">
                 <figure className="px-10 pt-10">

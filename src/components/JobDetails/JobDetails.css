@@ -1,0 +1,8 @@
+/* .details {
+    width: 203px;
+    height: 27px;
+} */
+.border{
+    border: 1px solid rgb(136, 127, 127);
+    margin: 4px 0;
+}

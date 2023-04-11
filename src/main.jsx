@@ -24,6 +24,8 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         // loader: () => fetch("jobs.json"),
+        // loader: ()=>fetch('https://raw.githubusercontent.com/Porgramming-Hero-web-course/b7a9-career-hub-IsmatJahanBijori/main/public/featured.json?token=GHSAT0AAAAAACARNWKBA3VAQAPYWHIESQNYZBULRDQ')
+        loader: ()=>fetch('featured.json')
       },
       {
         path: "/statistics",
@@ -38,9 +40,10 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path:'/job',
+        path:'/job/:id',
         element:<JobDetails></JobDetails>,
-        
+        // loader: ({params}) => fetch(`https://raw.githubusercontent.com/Porgramming-Hero-web-course/b7a9-career-hub-IsmatJahanBijori/main/public/featured.json/${params.id}`),
+        loader: ({params})=>fetch('/featured.json')
       }
     ]
   },

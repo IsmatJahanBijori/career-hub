@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css'
 const Header = () => {
     return (
@@ -8,10 +8,10 @@ const Header = () => {
                 <h1>Job Explorer</h1>
             </div>
             <div className='text-xl font-semibold'>
-                <Link className='color' to='/'>Home</Link>
-                <Link className='color' to='/statistics'>Statistics</Link>
-                <Link className='color' to='/appliedJobs'>Applied Jobs</Link>
-                <Link className='color' to='/blog'>Blog</Link>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to='/'>Home</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to='/statistics'>Statistics</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to='/appliedJobs'>Applied Jobs</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to='/blog'>Blog</NavLink>
             </div>
             <div>
             <button className='btn'>Start Applying</button>
@@ -21,3 +21,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// {({ isActive }) => (isActive ? 'active' : 'default')}

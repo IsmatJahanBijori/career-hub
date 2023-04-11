@@ -40,11 +40,11 @@ const Home = () => {
     return (
         <React.Fragment>
             {/*heading, image */}
-            <section className=' bg-slate-100 pt-10'>
+            <section className='bg-slate-100 pt-10'>
 
                 {/*heading */}
                 <div className='flex flex-col md:flex-row justify-around'>
-                <div className='mx-32'>
+                <div className='mx-auto'>
                     <h1 className='heading'>One Step <br /><span>Closer To Your</span> <br /> <span className='color'>Dream Job</span></h1>
                     <p className='paragraph'>Discover tens of thousands of employment options with the <br /> necessary knowledge. It is the future you. Locate <br /> it here. Manage every aspect of your job application process.
                     </p>
